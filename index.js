@@ -2,6 +2,10 @@ const express = require('express')
 const app = express()
 const port = 3102
 
+app.get('/test',(req,res)=>{
+	res.send('test')
+})
+
 app.get('/hieu', (req,res)=>{
 	res.send('My name\'s Hieu')
 })
